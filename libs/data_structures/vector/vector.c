@@ -100,3 +100,57 @@ void test_popBack_notEmptyVector() {
     assert(v.size == 0);
     assert(v.capacity == 1);
 }
+
+int *atVector(vector *v, size_t index) {
+    if (v->size <= index) {
+        fprintf(stderr, "IndexError: a[%llu] is not exists", index);
+        exit(1);
+    }
+    int *a = v->data + index;
+
+    return a;
+}
+
+int *back(vector *v) {
+    return atVector(v, v->size - 1);
+}
+
+int *front(vector *v) {
+    return atVector(v, 0);
+}
+
+void test_atVector_notEmptyVector() {
+    vector v = createVector(12);
+    for (int i = 0; i <= 11; i++) {
+        v.data[i] = i;
+    }
+    v.size = 12;
+    int *a = atVector(&v, 6);
+    assert(*a == 6);
+}
+
+void test_atVector_requestToLastElement() {
+    vector v = createVector(15);
+    for (int i = 0; i <= 14; i++) {
+        v.data[i] = i;
+    }
+    v.size = 15;
+    int *a = atVector(&v, 14);
+    assert(*a == 14);
+}
+
+void test_back_oneElementInVector() {
+    vector v = createVector(1);
+    v.data[0] = 42;
+    v.size = 1;
+    int *a = back(&v);
+    assert(*a == 42);
+}
+
+void test_front_oneElementInVector() {
+    vector v = createVector(1);
+    v.data[0] = 31;
+    v.size = 1;
+    int *a = front(&v);
+    assert(*a == 31);
+}
