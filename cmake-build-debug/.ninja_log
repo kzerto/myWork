@@ -1,0 +1,9 @@
+# ninja log v5
+1	66	6947328024116927	CMakeFiles/untitled1.dir/myFuction.c.obj	72e5c740d2cbc529
+2	137	6986346944795040	CMakeFiles/untitled1.dir/main.c.obj	afae9e51c84e99bd
+932	1897	6976879401428870	untitled1.exe	2b1cce9eb50157da
+6	174	6986346799971263	CMakeFiles/untitled1.dir/learningep.c.obj	42cb506493f4c7e4
+1	153	7003166915917883	build.ninja	9ec42b6698ab8655
+1	76	6947320260707054	CMakeFiles/untitled1.dir/learn.c.obj	8d69c79ed3dd9585
+6	365	6978222841966317	CMakeFiles/untitled1.dir/myFunction.c.obj	4aba663e1d4d0657
+10	193	6986346800190681	CMakeFiles/untitled1.dir/matrix.c.obj	c5030b948fac054d
