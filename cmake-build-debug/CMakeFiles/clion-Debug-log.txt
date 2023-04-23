@@ -1,13 +1,1 @@
-"D:\clion\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/clion/CLion 2022.3/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\levas\CLionProjects\untitled1 -B C:\Users\levas\CLionProjects\untitled1\cmake-build-debug
--- Configuring done
-CMake Error at CMakeLists.txt:8 (add_library):
-  Cannot find source file:
-
-    string/string_.h
-
-
-CMake Error at CMakeLists.txt:8 (add_library):
-  No SOURCES given to target: str
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+CMakeLists.txt not found in C:\Users\levas\CLionProjects\untitled1 Select CMakeLists.txt
